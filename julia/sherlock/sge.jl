@@ -1,9 +1,9 @@
 
 println("Started julia on sherlock")
 
-include("sherlock_launch.jl")
+#include("sherlock_launch.jl")
 
-bind_sherlock_procs()
+#bind_sherlock_procs()
 
 # here a function that runs your estimation:
 # using MOpt, mig
