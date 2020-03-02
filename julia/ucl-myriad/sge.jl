@@ -1,4 +1,4 @@
-@everywhere using LinearAlgebra, Distributed
+@everywhere using LinearAlgebra, Distributed, Statistics
 
 println("Started julia on myriad")
 
