@@ -9,8 +9,6 @@ println("make everybody say hello")
 
 println("make everybody do some math")
 
-pmap(m->grad_nlogit_case(beta,m), 1:NUMOBS, batch_size=batch_size)
-
 pmap( i->domath(i), [100 for j in 1:length(workers())] )
 
 println("make everybody pass a memory test")
