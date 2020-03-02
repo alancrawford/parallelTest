@@ -21,6 +21,6 @@ module load knitro/12.0.0/gnu-4.9.2
 
 echo "calling julia now:"
 
-julia10 --depwarn=no --machinefile $PE_HOSTFILE -L ../incl.jl sge.jl > results_test.log
+julia10 --depwarn=no --machine-file $PE_HOSTFILE -L ../incl.jl sge.jl > results_test.log
 
 
