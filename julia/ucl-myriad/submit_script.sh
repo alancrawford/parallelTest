@@ -16,7 +16,9 @@ module unload compilers
 module load compilers/gnu/4.9.2
 module load knitro/12.0.0/gnu-4.9.2
 
-echo "calling julia now:"
+echo "calling julia now on:"
+
+cat $PE_HOSTFILE
 
 /shared/ucl/apps/julia/1.0.0/bin/julia --depwarn=no --machine-file $PE_HOSTFILE -L ../incl.jl sge.jl > results_test.log
 
