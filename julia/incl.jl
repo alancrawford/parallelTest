@@ -19,7 +19,7 @@ end
 function doBIGmath(n=30000,m=10000)
 	println("allocating a $n by $m matrix ")
 	x = rand(n,m);
-	r = round(sizeof(x) /  1.074e+9 , 2)
+	r = round.(sizeof(x) /  1.074e+9 , digits=2)
 	println("my matrix has $r GB")
 	mean(x)
 end
