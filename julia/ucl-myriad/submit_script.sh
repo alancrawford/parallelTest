@@ -1,4 +1,7 @@
 #!/bin/bash -l
+
+source ~/.bash_profile
+
 #$ -S /bin/bash
 #$ -l h_rt=1:0:0
 #$ -l mem=4G
