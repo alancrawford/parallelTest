@@ -1,8 +1,7 @@
 
 
-
-
 # to be run on all nodes
+using LinearAlgebra, Statistics
 
 function sayhello()
    println("hi I am worker number $(myid()), I live on $(gethostname())")
