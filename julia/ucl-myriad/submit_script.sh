@@ -1,9 +1,9 @@
 #!/bin/bash -l
 #$ -S /bin/bash
-#$ -l h_rt=72:0:0
+#$ -l h_rt=1:0:0
 #$ -l mem=4G
 #$ -l tmpfs=4G
-#$ -pe mpi 10
+#$ -pe mpi 4
 ##$ -t 1
 #$ -N testfile
 #$ -wd /home/uctpalc/Git/parallelTest/julia/ucl-myriad/
