@@ -4,7 +4,7 @@
 #$ -l mem=4G
 #$ -l tmpfs=4G
 #$ -pe mpi 4
-##$ -t 1
+#$ -t 1
 #$ -N testfile
 #$ -wd /home/uctpalc/Git/parallelTest/julia/ucl-myriad/
 #$ -o /home/uctpalc/Scratch/tmpsave/test.out
