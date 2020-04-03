@@ -3,10 +3,11 @@
 #$ -l h_rt=1:0:0
 #$ -S /bin/bash
 #$ -j y
-#$ -N JuliaMPItest
 #$ -pe mpi 12
-#$ -e JuliaMPItest.err
-#$ -o JuliaMPItest.out
+#$ -wd /cluster/project6/AC_Git/parallelTest/julia/ucl-peacock/
+#$ -N JuliaMPItest
+#$ -e /home/uctpalc/sgelogs/JuliaMPItest.err
+#$ -o /home/uctpalc/sgelogs/JuliaMPItest.out
 
 awk '{ for (i=0; i < $2; ++i) { print $1} }' $PE_HOSTFILE > hosts
 
