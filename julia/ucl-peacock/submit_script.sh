@@ -16,6 +16,6 @@ echo "calling julia now on:"
 cat $PE_HOSTFILE
 cat hosts
 
-/share/apps/econ/acapp/julia-binary/1.1.0/bin/julia --depwarn=no --machine-file hosts -L ../incl.jl sge.jl > JuliaMPItest.log
+/share/apps/econ/acapp/julia-binary/1.1.0/bin/julia --depwarn=no --machine-file hosts -L ../incl.jl sge.jl > /home/uctpalc/sgelogs/JuliaMPItest.log
 
 echo "I am done."

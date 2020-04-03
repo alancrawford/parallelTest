@@ -16,6 +16,6 @@ echo "calling julia now on:"
 cat $PE_HOSTFILE
 cat hosts_tasks
 
-/share/apps/econ/acapp/julia-binary/1.1.0/bin/julia --depwarn=no --machine-file hosts_tasks -L ../incl.jl sge.jl > JuliaTASKStest.log
+/share/apps/econ/acapp/julia-binary/1.1.0/bin/julia --depwarn=no --machine-file hosts_tasks -L ../incl.jl sge.jl > /home/uctpalc/sgelogs/JuliaTASKStest.log
 
 echo "I am done."

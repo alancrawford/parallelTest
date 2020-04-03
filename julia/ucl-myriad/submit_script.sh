@@ -23,6 +23,6 @@ echo "calling julia now on:"
 cat $PE_HOSTFILE
 cat hosts
 
-/shared/ucl/apps/julia/1.0.0/bin/julia --depwarn=no --machine-file hosts -L ../incl.jl sge.jl > results_test.log
+/shared/ucl/apps/julia/1.0.0/bin/julia --depwarn=no --machine-file hosts -L ../incl.jl sge.jl > /home/uctpalc/Scratch/tmpsave/results_test.log
 
 echo "I am done."
