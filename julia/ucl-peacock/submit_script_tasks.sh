@@ -5,7 +5,7 @@
 #$ -j y
 #$ -N JuliaTASKStest
 #$ -t 1-12
-#$ -wd /cluster/project6/AC_Git/parallelTest/julia/ucl-peacock/
+#$ -wd /cluster/project6/AC_git/parallelTest/julia/ucl-peacock/
 #$ -e /home/uctpalc/sgelogs/JuliaTASKStest.err
 #$ -o /home/uctpalc/sgelogs/JuliaTASKSItest.out
 

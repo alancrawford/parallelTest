@@ -4,7 +4,7 @@
 #$ -S /bin/bash
 #$ -j y
 #$ -pe mpi 12
-#$ -wd /cluster/project6/AC_Git/parallelTest/julia/ucl-peacock/
+#$ -wd /cluster/project6/AC_git/parallelTest/julia/ucl-peacock/
 #$ -N JuliaMPItest
 #$ -e /home/uctpalc/sgelogs/JuliaMPItest.err
 #$ -o /home/uctpalc/sgelogs/JuliaMPItest.out
