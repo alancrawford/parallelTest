@@ -1,11 +1,8 @@
-source ~/.bash_profile
-
 #$ -l tmem=1G
 #$ -l h_vmem=1G
 #$ -l h_rt=1:0:0
 #$ -S /bin/bash
 #$ -j y
-#$ -wd ~/sgelogs
 #$ -N JuliaMPItest
 #$ -pe mpi 12
 #$ -e JuliaMPItest.err
@@ -18,6 +15,6 @@ echo "calling julia now on:"
 cat $PE_HOSTFILE
 cat hosts
 
-julia11 --depwarn=no --machine-file hosts -L ../incl.jl sge.jl > JuliaMPItest.log
+/share/apps/econ/acapp/julia-binary/1.1.0/bin/julia --depwarn=no --machine-file hosts -L ../incl.jl sge.jl > JuliaMPItest.log
 
 echo "I am done."
